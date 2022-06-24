@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MetronomeController">
+   <children>
+      <Pane prefHeight="520.0" prefWidth="650.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="option" layoutX="563.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleOptions" style="-fx-background-color: lightgrey;" text="Options">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="home" layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleHome" style="-fx-background-color: lightgrey;" text="Home">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="253.0" layoutY="2.0" text="Metronome" textFill="#00d7d7">
+               <font>
+                  <Font name="YuGothic" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="tap" layoutX="102.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleTap" prefHeight="30.0" prefWidth="164.0" style="-fx-background-color: lightgrey;" text="Tap for tempo">
+               <font>
+                  <Font name="YuGothic" size="19.0" />
+               </font>
+            </Button>
+            <Slider fx:id="tempoSlider" layoutX="70.0" layoutY="358.0" majorTickUnit="10.0" max="200.0" min="50.0" minorTickCount="1" onMouseDragged="#handleMouseDrag" onMouseReleased="#handleRelease" prefHeight="13.0" prefWidth="229.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="100.0" />
+            <TextField fx:id="tempoField" alignment="TOP_CENTER" layoutX="142.0" layoutY="289.0" onAction="#handleTempo" prefHeight="55.0" prefWidth="84.0" promptText="BPM" text="100">
+               <font>
+                  <Font name="YuGothic" size="26.0" />
+               </font>
+            </TextField>
+            <Circle fx:id="minus" fill="LIGHTGRAY" layoutX="85.0" layoutY="316.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="plus" fill="LIGHTGRAY" layoutX="277.0" layoutY="317.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button fx:id="minus" layoutX="69.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleMinus" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: lightgrey;" text="-">
+               <font>
+                  <Font name="YuGothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="plus" ellipsisString="=" layoutX="258.0" layoutY="297.0" mnemonicParsing="false" onAction="#handlePlus" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: lightgrey;" text="+">
+               <font>
+                  <Font name="YuGothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="quarter" layoutX="85.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleQuarter" style="-fx-background-color: lightgrey;" text="Quarter">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="eighth" layoutX="222.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleEighth" style="-fx-background-color: lightgrey;" text="Eighth">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="triplet" layoutX="341.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleTriplet" style="-fx-background-color: lightgrey;" text="Triplet">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="sixteenth" layoutX="469.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleSixteenth" style="-fx-background-color: lightgrey;" text="Sixteenth">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="65.0" fitWidth="126.0" layoutX="453.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/SixteenthNote.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="107.0" layoutX="323.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Triplet.png" />
+               </image></ImageView>
+            <ImageView fitHeight="72.0" fitWidth="83.0" layoutX="217.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/EighthNote.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="37.0" layoutX="108.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/QuarterNote.png" />
+               </image></ImageView>
+            <TextField fx:id="timerField" alignment="CENTER" layoutX="446.0" layoutY="299.0" onAction="#handleTimerField" prefHeight="72.0" prefWidth="133.0" text="0:00">
+               <font>
+                  <Font name="YuGothic" size="26.0" />
+               </font></TextField>
+            <Button fx:id="timerStart" layoutX="483.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleTimerStart" style="-fx-background-color: lightgrey;" text="Start">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="timerStop" layoutX="483.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleTimerStop" style="-fx-background-color: lightgrey;" text="Stop">
+               <font>
+                  <Font name="YuGothic" size="17.0" />
+               </font>
+            </Button>
+            <ToggleButton fx:id="start" layoutX="102.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="42.0" prefWidth="164.0" style="-fx-background-color: lightgrey;" text="Start">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font></ToggleButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

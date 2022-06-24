@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.StartController">
+   <children>
+      <Label layoutX="217.0" layoutY="487.0" text="Click anywhere to Start">
+         <font>
+            <Font name="YuGothic" size="21.0" />
+         </font></Label>
+      <Label layoutX="176.0" layoutY="26.0" prefHeight="83.0" prefWidth="298.0" text="Metronome" textFill="#00d7d7">
+         <font>
+            <Font name="YuGothic" size="54.0" />
+         </font>
+      </Label>
+      <Button fx:id="start" layoutY="3.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#handle" prefHeight="520.0" prefWidth="650.0" style="-fx-background-color: lightgrey; -fx-background-color: flat;">
+         <font>
+            <Font name="YuGothic" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="219.0" fitWidth="298.0" layoutX="179.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/theLick.jpg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.OptionsController">
+   <children>
+      <Pane prefHeight="520.0" prefWidth="650.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="272.0" layoutY="14.0" text="Options" textFill="#00d7d7">
+               <font>
+                  <Font name="YuGothic" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="credits" layoutX="272.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleCredits" prefHeight="45.0" prefWidth="106.0" style="-fx-background-color: lightgrey;" text="Credits">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="practice1" layoutX="256.0" layoutY="121.0" mnemonicParsing="false" onAction="#handlePracticeInfo" style="-fx-background-color: lightgrey;" text="Practice Info">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#handle" prefHeight="45.0" prefWidth="106.0" style="-fx-background-color: lightgrey;" text="Back">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="272.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleQuiz" prefHeight="43.0" prefWidth="106.0" style="-fx-background-color: lightgrey;" text="Quiz">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

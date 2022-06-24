@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PracticeInfoController">
+   <children>
+      <Pane prefHeight="520.0" prefWidth="650.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="245.0" layoutY="14.0" text="Practice Info" textFill="#00d7d7">
+               <font>
+                  <Font name="YuGothic" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="299.0" text="# Hours Practiced Last 7 Days:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="175.0" text="# Hours Practiced Today:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Circle fill="LIGHTGRAY" layoutX="347.0" layoutY="170.0" radius="49.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="LIGHTGRAY" layoutX="347.0" layoutY="309.0" radius="49.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="73.0" layoutY="418.0" text="\% Goal Hours Reached:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ProgressIndicator fx:id="hoursGoal" layoutX="296.0" layoutY="389.0" prefHeight="79.0" prefWidth="101.0" progress="0.0" />
+            <Label fx:id="hours7Days" layoutX="316.0" layoutY="294.0" prefHeight="30.0" prefWidth="62.0" text="1">
+               <font>
+                  <Font name="YuGothic Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="hoursToday" layoutX="316.0" layoutY="155.0" prefHeight="30.0" prefWidth="62.0" text="1">
+               <font>
+                  <Font name="YuGothic Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#handle" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: lightgrey;" text="Back">
+               <font>
+                  <Font name="YuGothic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

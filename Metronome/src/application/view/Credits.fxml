@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CreditsController">
+   <children>
+      <Pane prefHeight="520.0" prefWidth="650.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="294.0" layoutY="29.0" text="Credits" textFill="#00d7d7">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handle" style="-fx-background-color: lightgrey;" text="Back">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="273.0" layoutY="98.0" text="Jesse Garza">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="263.0" layoutY="278.0" text="Francisco Zarate">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="279.0" layoutY="218.0" text="Emily Perez">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="158.0" text="Tariq Granderson">
+               <font>
+                  <Font name="YuGothic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
