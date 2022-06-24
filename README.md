@@ -1,5 +1,6 @@
 # Metronome
 Spring 2019 - Coding Connoisseurs
+
 *About:
 	Metronome is a tempo-keeping app that will help musicians, ameteur and pro, keep time. 
 	The app will hold numerous bpms and can be changed to hold different time signatures 
