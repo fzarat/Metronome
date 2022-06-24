@@ -1,7 +1,7 @@
 # Metronome
 Spring 2019 - Coding Connoisseurs
 
-*About:
+**About**
 	Metronome is a tempo-keeping app that will help musicians, ameteur and pro, keep time. 
 	The app will hold numerous bpms and can be changed to hold different time signatures 
 	(¾, 4/4, ...), as well as provide the 4 basic subdivisions: quarter note, eighth note, triplet, and sixteenth note.
@@ -9,7 +9,7 @@ Spring 2019 - Coding Connoisseurs
 	tap-for-tempo button that will allow the user to create their own tempos, and a quiz that will test the user on basic
 	music theory.
 
-*Setup:
+**Setup**
 	To clone and run Metronome Open Eclipse and select File->Import. In the import window, under the "Git" folder select 
 	"Projects from Git". Then in the "Select Repository Source" window select "Clone URL" and click next. 
 	Navigate to the github repository at https://github.com/fzarat/Metronome and click the green "clone or download" button and 
@@ -20,6 +20,6 @@ Spring 2019 - Coding Connoisseurs
 	*Note: Metronome requires JavaFX. Consult the following link for help with this:
 	https://docs.oracle.com/javafx/2/installation/jfxpub-installation.htm
 
-*Known Issues:
+**Known Issues**
 	Tap tempo feature is currently not implemented. 
 	Bugs with practice mode time keeping.
